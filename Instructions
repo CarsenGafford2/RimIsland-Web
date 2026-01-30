@@ -1,0 +1,8 @@
+Initialize:
+tsc -init   
+
+Update:
+npm install typescript --global
+
+Build:
+tsc
