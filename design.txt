@@ -1,0 +1,6 @@
+Each tile in rimworld is 64x64 pixels.
+
+Right now i have assets drawn at 32x32 pixels. 
+I have them upscaled to 64x64 pixels
+
+I dont feel deltatime is necessary
