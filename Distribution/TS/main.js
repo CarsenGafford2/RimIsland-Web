@@ -1,4 +1,4 @@
 let message = 'Hello, World!';
 console.log(message);
 export {};
-//# sourceMappingURL=thing.js.map
+//# sourceMappingURL=main.js.map
