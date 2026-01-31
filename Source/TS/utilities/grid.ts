@@ -1,28 +1,21 @@
-import { vector2 } from "./vector2";
+import { Vector2 } from "./Vector2";
 
-export class grid<T>
+export abstract class Grid<T>
 {
     // Settings
-    readonly dimension: vector2;
+    readonly dimension: { x: number, y: number };
 
     // Overload Signatures
-    constructor(width: number, height: number);
-    constructor(dimension: vector2);
+    // constructor(width: number, height: number);
+    // constructor(dimension: Vector2);
 
     // Constructor
-    constructor(value: number | vector2, height?: number)
+    constructor(width: number, height: number)
     {
-        if (value instanceof vector2)
-        {
-            this.dimension = value;
-        }
-        else if (typeof value === "number" && typeof height === "number") 
-        {
-            this.dimension = new vector2(value, height);
-        }
-        else
-        {
-            throw new Error("Your grid constructor sharted.");
-        }
+        this.dimension = { x: width, y: height};
     }
+    
+    abstract set(x: number, y: number, value: T): void;
+
+    abstract get(x: number, y: number): T | null;
 }

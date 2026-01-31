@@ -1,10 +1,10 @@
-import { vector2 } from "../utilities/vector2";
+import { Vector2 } from "../utilities/Vector2";
 
-export abstract class entity
+export abstract class Entity
 {
     // Settings
-    protected position: vector2;
-    protected velocity: vector2;
+    protected position: Vector2;
+    protected velocity: Vector2;
 
     // Stats
     protected health: number = 100;
@@ -14,10 +14,10 @@ export abstract class entity
     // Checks
     protected alive: boolean = true;
 
-    constructor(position: vector2)
+    constructor(position: Vector2)
     {
         this.position = position;
-        this.velocity = vector2.zero();
+        this.velocity = Vector2.zero();
     }
 
     // Remove deltaTime if not planned, this is mainly just a placeholder

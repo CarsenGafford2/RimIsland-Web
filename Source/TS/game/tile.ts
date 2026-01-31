@@ -1,12 +1,12 @@
-import { vector2 } from "../utilities/vector2";
+import { Vector2 } from "../utilities/Vector2";
 
-export abstract class tile
+export abstract class Tile
 {
     // Settings
-    readonly position: vector2;
+    readonly position: Vector2;
     traversable: boolean;
 
-    constructor(position: vector2, traversable: boolean = true)
+    constructor(position: Vector2, traversable: boolean = true)
     {
         this.position = position.clone();
         this.traversable = traversable;

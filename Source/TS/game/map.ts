@@ -1,7 +1,7 @@
-import { grid } from "../utilities/grid";
-import { tile } from "./tile";
+import { Grid } from "../utilities/Grid";
+import { Tile } from "./Tile";
 
-export class map extends grid<tile>
+export class Map extends Grid<Tile>
 {
     constructor(width: number, height: number)
     {
@@ -14,5 +14,15 @@ export class map extends grid<tile>
                 // TODO: map out tiles
             }
         }
+    }
+
+    set(x: number, y: number, value: Tile): void 
+    {
+        throw new Error("Method not implemented.");
+    }
+
+    get(x: number, y: number): Tile | null 
+    {
+        throw new Error("Method not implemented.");
     }
 }

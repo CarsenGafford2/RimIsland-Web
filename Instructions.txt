@@ -17,3 +17,5 @@ Clean:
 tsc --build --clean
 
 Run the program with Live the Server Extension!
+
+For some reason ghost errors generate when you rename files in TypeScript, just restart studio when your done renaming.
