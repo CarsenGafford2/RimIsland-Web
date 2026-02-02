@@ -1,4 +1,4 @@
-import { Vector2 } from "../utilities/Vector2";
+import { Vector2 } from "../utilities/Vector2.js";
 export declare abstract class Entity {
     protected position: Vector2;
     protected velocity: Vector2;
@@ -13,4 +13,4 @@ export declare abstract class Entity {
     protected die(): void;
     get getPosition(): Vector2;
 }
-//# sourceMappingURL=Entity.d.ts.map
+//# sourceMappingURL=entity.d.ts.map

@@ -1,5 +1,5 @@
-import { Grid } from "../utilities/Grid";
-import { Tile } from "./Tile";
+import { Grid } from "../utilities/Grid.js";
+import { Tile } from "./Tile.js";
 export class Map extends Grid {
     constructor(width, height) {
         super(width, height);

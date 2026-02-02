@@ -1,4 +1,4 @@
-import type { Renderer } from "./Renderer";
+import type { Renderer } from "./Renderer.js";
 export declare class Tickerer {
     private static _instance?;
     private lastTime;

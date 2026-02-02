@@ -1,9 +1,12 @@
-import { Graphics } from "./engine/Graphics";
-import { Map } from "./game/Map";
-import { Renderer } from "./engine/Renderer";
-import { Tickerer } from "./engine/Tickerer";
-// Canvas 
-const graphics = new Graphics(800, 800);
+import { Graphics } from "./engine/Graphics.js";
+import { Map } from "./game/Map.js";
+import { Renderer } from "./engine/Renderer.js";
+import { Tickerer } from "./engine/Tickerer.js";
+// Canvas - attach to the gameContainer div
+const container = document.getElementById("gameContainer");
+if (!container)
+    throw new Error("Game container not found");
+const graphics = new Graphics(800, 800, container);
 // Map
 const map = new Map(20, 20);
 // Renderer
@@ -15,4 +18,4 @@ tick.attach(renderer);
 tick.start();
 let message = 'Hello, World!';
 console.log(message);
-//# sourceMappingURL=Main.js.map
+//# sourceMappingURL=main.js.map

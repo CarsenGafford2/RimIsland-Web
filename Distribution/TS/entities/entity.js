@@ -1,4 +1,4 @@
-import { Vector2 } from "../utilities/Vector2";
+import { Vector2 } from "../utilities/Vector2.js";
 export class Entity {
     // Settings
     position;
@@ -29,4 +29,4 @@ export class Entity {
         return this.position.clone();
     }
 }
-//# sourceMappingURL=Entity.js.map
+//# sourceMappingURL=entity.js.map
