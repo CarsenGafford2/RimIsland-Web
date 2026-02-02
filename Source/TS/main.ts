@@ -1,7 +1,7 @@
-import { Graphics } from "./engine/Graphics";
-import { Map } from "./game/Map";
-import { Renderer } from "./engine/Renderer";
-import { Tickerer } from "./engine/Tickerer";
+import { Graphics } from "./engine/Graphics.js";
+import { Map } from "./game/Map.js";
+import { Renderer } from "./engine/Renderer.js";
+import { Tickerer } from "./engine/Tickerer.js";
 
 
 // Canvas - attach to the gameContainer div

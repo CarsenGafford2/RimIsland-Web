@@ -1,4 +1,4 @@
-import type { Renderer } from "./Renderer";
+import type { Renderer } from "./Renderer.js";
 
 export class Tickerer
 {
