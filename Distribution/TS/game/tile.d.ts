@@ -1,8 +1,8 @@
-import { vector2 } from "../utilities/vector2";
-export declare abstract class tile {
-    readonly position: vector2;
+import { Vector2 } from "../utilities/Vector2";
+export declare abstract class Tile {
+    readonly position: Vector2;
     traversable: boolean;
-    constructor(position: vector2, traversable?: boolean);
+    constructor(position: Vector2, traversable?: boolean);
     abstract update(deltaTime: number): void;
 }
-//# sourceMappingURL=tile.d.ts.map
+//# sourceMappingURL=Tile.d.ts.map

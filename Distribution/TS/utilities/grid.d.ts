@@ -1,7 +1,10 @@
-import { vector2 } from "./vector2";
-export declare class grid<T> {
-    readonly dimension: vector2;
+export declare abstract class Grid<T> {
+    readonly dimension: {
+        x: number;
+        y: number;
+    };
     constructor(width: number, height: number);
-    constructor(dimension: vector2);
+    abstract set(x: number, y: number, value: T): void;
+    abstract get(x: number, y: number): T | null;
 }
-//# sourceMappingURL=grid.d.ts.map
+//# sourceMappingURL=Grid.d.ts.map

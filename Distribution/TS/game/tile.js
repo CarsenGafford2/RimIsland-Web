@@ -1,5 +1,5 @@
-import { vector2 } from "../utilities/vector2";
-export class tile {
+import { Vector2 } from "../utilities/Vector2";
+export class Tile {
     // Settings
     position;
     traversable;
@@ -8,4 +8,4 @@ export class tile {
         this.traversable = traversable;
     }
 }
-//# sourceMappingURL=tile.js.map
+//# sourceMappingURL=Tile.js.map

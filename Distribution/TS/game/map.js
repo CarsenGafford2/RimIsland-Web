@@ -1,6 +1,6 @@
-import { grid } from "../utilities/grid";
-import { tile } from "./tile";
-export class map extends grid {
+import { Grid } from "../utilities/Grid";
+import { Tile } from "./Tile";
+export class Map extends Grid {
     constructor(width, height) {
         super(width, height);
         for (let y = 0; y < this.dimension.y; y++) {
@@ -9,5 +9,11 @@ export class map extends grid {
             }
         }
     }
+    set(x, y, value) {
+        throw new Error("Method not implemented.");
+    }
+    get(x, y) {
+        throw new Error("Method not implemented.");
+    }
 }
-//# sourceMappingURL=map.js.map
+//# sourceMappingURL=Map.js.map

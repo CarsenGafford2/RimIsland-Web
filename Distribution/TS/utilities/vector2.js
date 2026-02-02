@@ -1,4 +1,4 @@
-export class vector2 {
+export class Vector2 {
     x;
     y;
     constructor(x = 0, y = 0) {
@@ -6,7 +6,7 @@ export class vector2 {
         this.y = y;
     }
     clone() {
-        return new vector2(this.x, this.y);
+        return new Vector2(this.x, this.y);
     }
     sum(other) {
         this.x += other.x;
@@ -19,7 +19,7 @@ export class vector2 {
         return this;
     }
     static zero() {
-        return new vector2(0, 0);
+        return new Vector2(0, 0);
     }
 }
-//# sourceMappingURL=vector2.js.map
+//# sourceMappingURL=Vector2.js.map

@@ -1,18 +1,13 @@
-import { vector2 } from "./vector2";
-export class grid {
+import { Vector2 } from "./Vector2";
+export class Grid {
     // Settings
     dimension;
+    // Overload Signatures
+    // constructor(width: number, height: number);
+    // constructor(dimension: Vector2);
     // Constructor
-    constructor(value, height) {
-        if (value instanceof vector2) {
-            this.dimension = value;
-        }
-        else if (typeof value === "number" && typeof height === "number") {
-            this.dimension = new vector2(value, height);
-        }
-        else {
-            throw new Error("Your grid constructor sharted.");
-        }
+    constructor(width, height) {
+        this.dimension = { x: width, y: height };
     }
 }
-//# sourceMappingURL=grid.js.map
+//# sourceMappingURL=Grid.js.map

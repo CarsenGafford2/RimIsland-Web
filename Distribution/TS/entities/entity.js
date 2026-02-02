@@ -1,5 +1,5 @@
-import { vector2 } from "../utilities/vector2";
-export class entity {
+import { Vector2 } from "../utilities/Vector2";
+export class Entity {
     // Settings
     position;
     velocity;
@@ -11,7 +11,7 @@ export class entity {
     alive = true;
     constructor(position) {
         this.position = position;
-        this.velocity = vector2.zero();
+        this.velocity = Vector2.zero();
     }
     move(deltaTime) {
         this.position.sum(this.velocity.clone().scale(deltaTime));
@@ -29,4 +29,4 @@ export class entity {
         return this.position.clone();
     }
 }
-//# sourceMappingURL=entity.js.map
+//# sourceMappingURL=Entity.js.map
