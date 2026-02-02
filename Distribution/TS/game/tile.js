@@ -1,4 +1,4 @@
-import { Vector2 } from "../utilities/Vector2";
+import { Vector2 } from "../utilities/Vector2.js";
 export class Tile {
     // Settings
     position;

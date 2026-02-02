@@ -1,4 +1,4 @@
-import { Vector2 } from "../utilities/Vector2";
+import { Vector2 } from "../utilities/Vector2.js";
 export declare abstract class Tile {
     readonly position: Vector2;
     traversable: boolean;
